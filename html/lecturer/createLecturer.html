@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Create Lecturer</title>
+    <link rel="icon" type="image/png" href="/media/Algebra-logo.png" />
+    <link rel="stylesheet" href="/css/lecturer/createLecturer.css" />
+    <script src="/js/modalDialog.js"></script>
+
+  </head>
+  <body>
+    <header>
+      <div id="navbar"></div>
+    </header>
+    <div id="titleWrapper">
+      <h2 id="title">Create lecturer</h2>
+    </div>
+
+    <div class="container">
+      <form id="createLecturer">
+        <h3>First Name</h3>
+        <input type="text" id="firstName" name="firstName" autocomplete="off"  />
+        <h3>Last Name</h3>
+        <input type="text" id="lastName" name="lastName" autocomplete="off"  />
+        <h3>Email</h3>
+        <input type="email" id="email" name="email" autocomplete="off" />
+        <h3>Password</h3>
+        <input type="password" id="password" name="password" autocomplete="off"   />
+        <input
+          type="submit"
+          id="btnCreate"
+          href="/html/lecturer/lecturer.html"
+          value="Create Lecturer"
+        />
+      </form>
+    </div>
+
+    <footer>
+      <div id="footer"></div>
+    </footer>
+    <script src="/src/loadComponents.js"></script>
+    <script src="/js/lecturer/register.js"></script>
+  </body>
+</html>
