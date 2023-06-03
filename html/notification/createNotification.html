@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Create Notification</title>
+    <link rel="icon" type="image/png" href="/media/Algebra-logo.png" />
+    <link rel="stylesheet" href="/css/notification/createNotification.css" />
+    <script src="/js/modalDialog.js"></script>
+  </head>
+  <body>
+    <header>
+      <div id="navbar"></div>
+    </header>
+    <div id="titleWrapper">
+      <h2 id="title">Create notification</h2>
+    </div>
+
+    <div class="container">
+      <form id="createNotification">
+        <h3>Name</h3>
+        <input type="text" id="titleofNotification" name="name" />
+        <h3>End date</h3>
+        <input type="date" id="endDate" name="endDate" />
+        <h3>Course</h3>
+        <select id="course" name="course"></select>
+        <h3>Description</h3>
+        <textarea id="description" name="description" rows="5"></textarea>
+        <input type="submit" id="btnCreate" value="Create Notification" />
+      </form>
+    </div>
+
+    <footer>
+      <div id="footer"></div>
+    </footer>
+    <script src="/src/loadComponents.js"></script>
+    <script src="/js/notification/createNotification.js"></script>
+  </body>
+</html>
