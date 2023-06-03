@@ -1,0 +1,74 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+#title {
+  margin: 30px auto;
+  width: 80%;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 48px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.container {
+  width: 80%;
+  margin: 60px auto 350px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 60px;
+}
+
+.notificationCard {
+  padding: 10px;
+  text-align: left;
+  background: rgba(244, 244, 244, 1);
+}
+
+.titleOfNotification {
+  font-size: 30px;
+  line-height: 10px;
+  font-weight: 400;
+  text-align: left;
+  color: rgba(196, 15, 97, 1);
+}
+
+.nameOfCourse {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.description {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: justified;
+}
+
+.informations {
+  display: flex;
+  justify-content: space-between;
+}
+
+.date {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.creator {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: center;
+}

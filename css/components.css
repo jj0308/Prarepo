@@ -1,0 +1,77 @@
+#navbar {
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+#navbar img {
+  max-height: 50px;
+}
+nav ul {
+  margin: 0;
+  padding: 10px;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav li {
+  margin-left: 30px;
+}
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+ nav a{
+  background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
+    linear-gradient(
+      to right,
+      rgb(255, 157, 0),
+      rgba(255, 0, 180, 1)
+    );
+  background-size: 100% 0.1em, 0 0.1em;
+  background-position: 100% 100%, 0% 100%;
+  background-repeat: no-repeat;
+  transition: background-size 400ms;
+}
+
+ nav a:hover {
+  background-size: 0 0.1em, 100% 0.1em;
+}
+
+#logoutIcon {
+  height: 35px;
+  width: 35px;
+}
+#footer {
+  background: linear-gradient(90deg, #e27210 0%, #c40f61 100%);
+  color: #fff;
+  text-align: center;
+  position: sticky;
+  width: 100%;
+  bottom: 0;
+  height: 90px;
+}
+
+#textFooter {
+  font-size: 24px;
+  font-weight: 200;
+  line-height: 90px;
+  text-align: center;
+}
+#btnCreate, #btnEdit {
+  cursor: pointer;
+}
+
+a#btnEdit, a#btnDelete {
+  color: transparent;
+}
