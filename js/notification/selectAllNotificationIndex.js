@@ -26,9 +26,10 @@ function getNotificationsAdmin() {
   })
     .then((res) => res.json())
     .then((data) => {
-      const currentDate = new Date().toLocaleDateString('en-US');
+      console.log(data);
+      const currentDate = new Date();
       const filteredData = data.filter(
-        (notification) => new Date(notification.date_expired).toLocaleDateString('en-US') >= currentDate
+        (notification) => new Date(notification.date_expired) >= currentDate
       );
       if (filteredData.length > 0) {
         filteredData.forEach((notification) => {
@@ -52,7 +53,7 @@ function getNotifications(userId) {
       console.log(data);
       const currentDate = new Date();
       const filteredData = data.filter(
-        (notification) => new Date(notification.date_expired) > currentDate
+        (notification) => new Date(notification.date_expired) >= currentDate
       );
       if (filteredData.length > 0) {
         filteredData.forEach((notification) => {
@@ -60,7 +61,7 @@ function getNotifications(userId) {
         });
       }
     })
-    .catch((err) => console.log(err + "tu pukne 2"));
+    .catch((err) => console.log(err));
 }
 
 function createNotificationCard(notification) {
